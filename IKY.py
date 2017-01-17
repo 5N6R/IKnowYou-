@@ -23,7 +23,7 @@ except KeyError:
  print("Sorry, but... "+err)
  sys.exit(0)
 i=len(rr)
-print("Всего в группе "+nmg+" "+str(i)+" челловек.")
+print("Всего в группе "+nmg+" "+str(i)+" человек.")
 for ii in range(0,i-1):
  r2 = requests.get("https://api.vk.com/method/users.get",params={"user_ids":rr[ii],"fields":"sex,photo_max_orig,bdate"})
  u=r2.json()
