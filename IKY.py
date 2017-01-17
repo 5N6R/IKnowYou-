@@ -32,7 +32,7 @@ for ii in range(0,i-1):
  pht=u["response"][0]["photo_max_orig"]
  idu=u["response"][0]["uid"]
  if sx==genG and pht!="https://vk.com/images/deactivated_400.png" and pht!="http://vk.com/images/camera_400.png" and pht!="https://vk.com/images/deactivated_400.png":
-  print("\033[1;33mСкачивю "+nm+" \033[0;0m "+pht)
+  print("\033[1;33mСкачиваю "+nm+" \033[0;0m "+pht)
   #urllib.request.urlretrieve(pht,nm+"_id_"+str(idu)+".jpg")
   client=opener.open(pht)
   f=open(nm+"_id_"+str(idu)+".jpg","wb")
