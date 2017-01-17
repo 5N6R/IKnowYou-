@@ -24,7 +24,7 @@ except KeyError:
  sys.exit(0)
 i=len(rr)
 print("Всего в группе "+nmg+" "+str(i)+" человек.")
-for ii in range(0,i-1):
+for ii in range(0,i):
  r2 = requests.get("https://api.vk.com/method/users.get",params={"user_ids":rr[ii],"fields":"sex,photo_max_orig,bdate"})
  u=r2.json()
  sx=u["response"][0]["sex"]
